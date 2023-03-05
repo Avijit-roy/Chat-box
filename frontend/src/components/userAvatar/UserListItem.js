@@ -1,0 +1,45 @@
+import { Avatar, Box, Text } from "@chakra-ui/react";
+
+const UserListItem = ({ user, handleFunction }) => {
+  return (
+    <Box
+      onClick={handleFunction}
+      cursor="pointer"
+      bg="#53d2dc"
+      boxShadow="5px 5px 13px #8b8b8b,
+             -5px -5px 13px #ffffff"
+      _hover={{
+        background: "#ffe3b3",
+        color: "black",
+        width: "100%",
+        marginTop: "20px",
+        marginBottom: "20px",
+      }}
+      w="90%"
+      display="flex"
+      alignItems="center"
+      color="black"
+      px={3}
+      py={2}
+      mb={2}
+      borderRadius="lg"
+    >
+      <Avatar
+        mr={2}
+        size="sm"
+        cursor="pointer"
+        name={user.name}
+        src={user.pic}
+      />
+      <Box>
+        <Text>{user.name}</Text>
+        <Text fontSize="xs">
+          <b>Email : </b>
+          {user.email}
+        </Text>
+      </Box>
+    </Box>
+  );
+};
+
+export default UserListItem;
