@@ -2,12 +2,15 @@ import React, { useEffect } from "react";
 import {
   Box,
   Container,
+  Image,
   Tab,
   TabList,
   TabPanel,
   TabPanels,
   Tabs,
   Text,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
@@ -42,9 +45,21 @@ const Homepage = () => {
           m="10px 0 15px 0"
           border="none"
         >
-          <Text fontSize="4xl" fontFamily="Work sans" textAlign="center">
-            cHat-BoX
-          </Text>
+            <Wrap>
+            <WrapItem paddingTop="4%">
+              <Image
+                src="https://chatbox-456l.onrender.com/favicon.png"
+                alt="logo"
+                width="40px"
+                height="40px"
+              ></Image>
+            </WrapItem>
+            <WrapItem>
+              <Text fontSize="4xl" fontFamily="Work sans" textAlign="center">
+                cHat-BoX
+              </Text>
+            </WrapItem>
+          </Wrap>
         </Box>
 
         <Tabs isFitted variant="soft-rounded">
