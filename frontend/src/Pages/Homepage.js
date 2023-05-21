@@ -48,7 +48,7 @@ const Homepage = () => {
             <Wrap>
             <WrapItem paddingTop="4%">
               <Image
-                src="./favicon.png"
+                src="https://github.com/Avijit-roy/Images/blob/main/favicon.png"
                 alt="logo"
                 width="40px"
                 height="40px"
