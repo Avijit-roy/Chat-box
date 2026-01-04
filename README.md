@@ -131,62 +131,106 @@ The app will open at: `http://localhost:3000`
 ## 📚 Project Structure
 
 ```
-chat-box/
+Chat-box/
+├── .gitignore
+├── LICENSE
+├── README.md
+├── Screenshots/
+│   ├── Screenshot 2023-05-05 211053.png
+│   ├── Screenshot 2023-05-05 211550.png
+│   ├── Screenshot 2023-05-05 211630.png
+│   └── a.txt
 ├── backend/
 │   ├── config/
-│   │   ├── db.js                 # MongoDB connection
-│   │   └── generateToken.js      # JWT token generation
+│   │   ├── db.js
+│   │   └── generateToken.js
 │   ├── controllers/
-│   │   ├── chatControllers.js    # Chat logic
-│   │   ├── messageControllers.js # Message logic
-│   │   └── userControllers.js    # User logic
-│   ├── middlewares/
-│   │   ├── authMiddleware.js     # JWT verification
-│   │   └── errorMiddleware.js    # Error handling
-│   ├── models/
-│   │   ├── chatModel.js          # Chat schema
-│   │   ├── messageModel.js       # Message schema
-│   │   └── userModel.js          # User schema
-│   ├── routes/
-│   │   ├── chatRoutes.js         # Chat endpoints
-│   │   ├── messageRoutes.js      # Message endpoints
-│   │   └── userRoutes.js         # User endpoints
+│   │   ├── chatControllers.js
+│   │   ├── messageControllers.js
+│   │   └── userControllers.js
 │   ├── data/
-│   │   └── data.js               # Sample data
-│   ├── server.js                 # Express app setup
-│   ├── package.json
-│   └── .env
-│
+│   │   └── data.js
+│   ├── middlewares/
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│   ├── models/
+│   │   ├── chatModel.js
+│   │   ├── messageModel.js
+│   │   └── userModel.js
+│   ├── routes/
+│   │   ├── chatRoutes.js
+│   │   ├── messageRoutes.js
+│   │   └── userRoutes.js
+│   └── server.js
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Authentication/
-│   │   │   │   ├── Login.js
-│   │   │   │   └── Signup.js
-│   │   │   ├── miscellaneous/
-│   │   │   │   ├── SideDrawer.js
-│   │   │   │   ├── GroupChatModal.js
-│   │   │   │   ├── UpdateGroupChatModal.js
-│   │   │   │   └── ProfileModel.js
-│   │   │   ├── ChatBox.js
-│   │   │   ├── MyChats.js
-│   │   │   ├── SingleChat.js
-│   │   │   ├── ScrollableChat.js
-│   │   │   └── userAvatar/
-│   │   ├── Pages/
-│   │   │   ├── Homepage.js
-│   │   │   └── Chatpage.js
-│   │   ├── Context/
-│   │   │   └── ChatProvider.js   # Global state management
-│   │   ├── config/
-│   │   │   └── ChatLogics.js     # Helper functions
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── styles/
+│   ├── build/
+│   │   ├── asset-manifest.json
+│   │   ├── favicon.ico
+│   │   ├── favicon.jpg
+│   │   ├── favicon.png
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   ├── robots.txt
+│   │   └── static/
+│   │       ├── css/
+│   │       │   ├── main.e2308290.css
+│   │       │   └── main.e2308290.css.map
+│   │       ├── js/
+│   │       │   ├── main.9d837798.js
+│   │       │   ├── main.9d837798.js.LICENSE.txt
+│   │       │   └── main.9d837798.js.map
+│   │       └── media/
+│   │           └── background.bb83868fcaa1e68c8558.jpg
+│   ├── package-lock.json
 │   ├── package.json
-│   └── public/
-│
-└── README.md
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── favicon.jpg
+│   │   ├── favicon.png
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   └── src/
+│       ├── App.css
+│       ├── App.js
+│       ├── Context/
+│       │   └── ChatProvider.js
+│       ├── Pages/
+│       │   ├── Chatpage.js
+│       │   ├── Homepage.js
+│       │   └── favicon.png
+│       ├── animations/
+│       │   └── typing.json
+│       ├── background.jpg
+│       ├── components/
+│       │   ├── Authentication/
+│       │   │   ├── Login.js
+│       │   │   └── Signup.js
+│       │   ├── ChatBox.js
+│       │   ├── ChatLoading.js
+│       │   ├── MyChats.js
+│       │   ├── ScrollableChat.js
+│       │   ├── SingleChat.js
+│       │   ├── miscellaneous/
+│       │   │   ├── GroupChatModal.js
+│       │   │   ├── ProfileModel.js
+│       │   │   ├── SideDrawer.js
+│       │   │   ├── UpdateGroupChatModal.js
+│       │   │   └── favicon.png
+│       │   ├── styles.css
+│       │   └── userAvatar/
+│       │       ├── UserBadgeItem.js
+│       │       └── UserListItem.js
+│       ├── config/
+│       │   └── ChatLogics.js
+│       ├── index.css
+│       └── index.js
+├── package-lock.json
+└── package.json
 ```
 
 ---
